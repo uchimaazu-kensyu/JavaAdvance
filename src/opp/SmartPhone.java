@@ -13,7 +13,7 @@ public class SmartPhone {
         this.os =os;
     }
 
-    private void setAccount(Account account){
+    public void setAccount(Account account){
         this.account = account;
     }
 
@@ -26,24 +26,21 @@ public class SmartPhone {
         System.out.println(account.getAccountInfo());
     }
 
-    private boolean addAddressBook(AddressBook[] addressBooks){
-        boolean judge =false ;
+    public boolean addAddressBook(AddressBook[] addressBooks){
+        boolean judge =true ;
         int i =0;
         for( i =0; i<addressBooks.length-1; i++) {
             if (addressBooks[i] == null) {
                 judge = true;
-                break;
+                this.addressBooks = addressBooks ;
+                return true;
             }
         }
+        System.out.println(addressBooks[0]);
+        return false;
 
-        if(judge ==true){
-            this.=addressBooks ;
-            return true;
-      }
       }
 
-
-}
 
 
 
