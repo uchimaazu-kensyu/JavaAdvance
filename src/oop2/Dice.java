@@ -3,6 +3,7 @@ import java.util.Random;
 
 public class Dice {
     int num;
+    static int timesCounter=1;
 
     public int cast(){
 
