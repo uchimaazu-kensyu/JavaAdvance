@@ -8,9 +8,12 @@ public class SmartPhone {
     String[] apps;
 
 
+
+
     public SmartPhone( String model, String os){
         this.model = model;
         this.os =os;
+        this.addressBooks =new AddressBook[10];
     }
 
     public void setAccount(Account account){
@@ -26,23 +29,28 @@ public class SmartPhone {
         System.out.println(account.getAccountInfo());
     }
 
-    public boolean addAddressBook(AddressBook[] addressBooks){
-        boolean judge =true ;
-        int i =0;
-        for( i =0; i<addressBooks.length-1; i++) {
-            if (addressBooks[i] == null) {
-                judge = true;
-                this.addressBooks = addressBooks ;
-                return true;
-            }
+    public boolean addAddressBook(AddressBook[] tuika_addressBooks){
+
+            this.addressBooks = tuika_addressBooks ;
+
+            return true;
+
+
+
+    }
+
+    public void displayAppList(String[] apps){
+        for (var e=0; e < apps.length; e++){
+            System.out.println(apps[e]);
         }
-        System.out.println(addressBooks[0]);
-        return false;
+
+    }
+
+
+
 
       }
 
 
 
 
-
-}
