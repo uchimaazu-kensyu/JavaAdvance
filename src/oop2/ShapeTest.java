@@ -7,7 +7,9 @@ public class ShapeTest {
         
         var tri = new Triangle(10,4);
         var rect = new Rectangle(7,11);
-        Shape[] areas = {tri,rect};
+        var cir = new Circle(10);
+
+        Shape[] areas = {tri,rect,cir};
         var total =getTotalArea(areas);
         System.out.println(total);
         
