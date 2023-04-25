@@ -31,13 +31,11 @@ public class Main {
 
 
         smartPhone.addAddressBook(address);
-
-
         System.out.println(smartPhone.addressBooks[0].name);
-        System.out.println();
+
+
         smartPhone.displayAppList(new String[]{"amazon", "LINE", "facebook", "Twitter", "YouTube"});
 
-        //        System.out.println(smartPhone.addAddressBook(address)[0].name);
 
 
 
