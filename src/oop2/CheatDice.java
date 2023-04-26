@@ -3,10 +3,11 @@ package oop2;
 public class CheatDice extends Dice {
 
 
-    public int main(){
+    @Override
+    public int cast(){
         if(timesCounter % 6 != 0 ){
             timesCounter++;
-            return cast();
+            return super.cast();
         }else {
             timesCounter++;
             num=6;

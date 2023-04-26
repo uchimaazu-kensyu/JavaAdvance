@@ -6,11 +6,13 @@ public class ShapeTest {
     public static void main(String[] args){
         
         var tri = new Triangle(10,4);
+//        var tri2 = new Triangle(4,3);
         var rect = new Rectangle(7,11);
         var cir = new Circle(10);
 
+
         Shape[] areas = {tri,rect,cir};
-        var total =getTotalArea(areas);
+        var total = getTotalArea(areas);
         System.out.println(total);
         
         
